@@ -1,0 +1,48 @@
+"Natural resources": {
+      "text": "petroleum, fish, natural gas"
+
+         "Natural hazards": {
+      "text": "infrequent hurricanes; periodic landslides"
+    },
+    "Government type": {
+      "text": "parliamentary republic; a Commonwealth realm"
+    },
+
+     "Administrative divisions": {
+      "text": "11 parishes and 1 city*; Bridgetown*, Christ Church, Saint Andrew, Saint George, Saint James, Saint John, Saint Joseph, Saint Lucy, Saint Michael, Saint Peter, Saint Philip, Saint Thomas"
+    },
+
+    "Flag description": {
+      "text": "three equal vertical bands of ultramarine blue (hoist side), gold, and ultramarine blue with the head of a black trident centered on the gold band; the band colors represent the blue of the sea and sky and the gold of the beaches; the trident head represents independence and a break with the past&nbsp;"
+
+
+
+
+
+
+"current": {
+        "temp_c": 28.1,
+        "temp_f": 82.6,
+          "condition": {
+            "text": "Overcast",
+            "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+"feelslike_c": 31.8,
+        "feelslike_f": 89.2,
+
+
+
+
+To Do:
+
+* weather component: add info and design
+* UI design spotify component, weather component, 
+
+
+https://emoji-api.com/emojis?access_key=e968b6d494d4bc9a04b6aa9b10eae6f2848bc5ca
+
+
+https://base-ui.com/react/overview/quick-start
+https://floating-ui.com/docs/react-examples
+https://floating-ui.com/
+
+hover:bg-[rgba(255,69,0,1.0)]
