@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import type { Emoji } from "@/app/types/emoji";
+import type { Emoji } from "@/app/types/Emoji";
 
 export function useEmojis() {
   const [emojis, setEmojis] = useState<Record<string, Emoji>>({});

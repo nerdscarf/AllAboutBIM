@@ -1,12 +1,12 @@
 import BasicInfo from "@/app/components/basicinfo";
 import ApisUsed from "./components/apisused";
-import History from "./components/history";
-import Weather from "./components/weather";
+// import History from "./components/history";
+// import Weather from "./components/weather";
 import Holidays from "./components/publicholiday";
-import Spotify from './components/spotify';
-import BasicInfoCard from "./components/basicinfocard";
-import RedditInfoCard from "./components/reddit";
-import ExchangeRate from "./components/exchangerate";
+// import Spotify from './components/spotify';
+// import BasicInfoCard from "./components/basicinfocard";
+// import RedditInfoCard from "./components/reddit";
+// import ExchangeRate from "./components/exchangerate";
 
 export default function Home() {
   return (

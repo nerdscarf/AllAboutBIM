@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import type { Emoji } from "@/app/types/emoji";
+import type { Emoji } from "@/app/types/Emoji";
 
 const curatedSlugs = [
   "headphone",

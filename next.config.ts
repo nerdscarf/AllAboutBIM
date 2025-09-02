@@ -1,14 +1,16 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-images: {
+  output: 'export', // 👈 Required for static export
+
+  images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'i.scdn.co',
         pathname: '**',
       },
-       {
+      {
         protocol: 'https',
         hostname: 'images.unsplash.com',
         pathname: '**',
@@ -28,5 +30,3 @@ images: {
 };
 
 export default nextConfig;
-
-

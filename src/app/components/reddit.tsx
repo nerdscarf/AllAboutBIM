@@ -1,19 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
-import type { RedditInfo } from "@/app/types/RedditInfo";
+import type { RedditInfo, Post } from "@/app/types/RedditInfo"; // ✅ import fixed
 import { useEmojis } from "@/hooks/useEmojis";
-
-interface Post {
-  title: string;
-  url: string;
-}
-
-// interface Data {
-//   posts: Post[];
-// }
 
 export default function RedditInfoCard() {
   const [data, setData] = useState<RedditInfo | null>(null);
+  const { emojis } = useEmojis();
 
   useEffect(() => {
     fetch("/api/reddit")
@@ -22,7 +14,6 @@ export default function RedditInfoCard() {
       .catch((err) => console.error(err));
   }, []);
 
-  const { emojis } = useEmojis();
   if (!data) return <p>Loading...</p>;
 
   return (
@@ -34,14 +25,19 @@ export default function RedditInfoCard() {
         </h1>
       </div>
       <ul className="text-sm pt-3">
-        {data.posts.map((post: Post, idx: number, upvotes: number) => (
-          <li key={idx} className="m-1 rounded-md ">
+        {data.posts.map((post: Post, idx: number) => (
+          <li key={idx} className="m-1 rounded-md">
             <div className="flex flex-row items-center py-2">
-              <div className="flex flex-col flex-nowrap">
-                {emojis["e0-6-thumbs-up"]?.character}
+              <div className="flex flex-col flex-nowrap items-center pr-2">
+                <span>{emojis["e0-6-thumbs-up"]?.character}</span>
                 <div>{post.upvotes}</div>
               </div>
-              <a href={`https://reddit.com${post.url}`} target="_blank" className="pl-2">
+              <a
+                href={`https://reddit.com${post.url}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pl-2 underline hover:text-blue-600"
+              >
                 {post.title}
               </a>
             </div>
@@ -51,7 +47,3 @@ export default function RedditInfoCard() {
     </div>
   );
 }
-
-// https://www.reddit.com/r/barbados/top.json?limit=5&t=month
-
-// To Do: map the json object so that the title of each post is a link to it, link title to r/barbados
