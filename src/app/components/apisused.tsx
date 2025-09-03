@@ -4,11 +4,13 @@ import { useUnsplash } from "../context/UnsplashContext";
 
 export default function ApisUsed() {
   const { emojis } = useEmojis();
+
   const { portraitPhotos, landscapePhotos } = useUnsplash();
-  const portPhotographersName = portraitPhotos?.[0].user.name;
-  const portPhotographersURL = portraitPhotos?.[0].user.links.html;
-  const landPhotographersName = landscapePhotos?.[0].user.name;
-  const landPhotographersURL = landscapePhotos?.[0].user.links.html;
+  const portPhotographersName = portraitPhotos?.[0]?.user?.name ?? "Unknown";
+  const portPhotographersURL = portraitPhotos?.[0]?.user?.links?.html ?? "#";
+
+  const landPhotographersName = landscapePhotos?.[0]?.user?.name ?? "Unknown";
+  const landPhotographersURL = landscapePhotos?.[0]?.user?.links?.html ?? "#";
 
   return (
     <div className="rounded-2xl bg-white shadow-xl text-[#374151] p-7 text-sm self-start border-4 border-black hover:outline-4 hover:outline-black min-w-max">
