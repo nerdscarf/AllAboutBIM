@@ -13,6 +13,7 @@ export default function Background({ children }: { children: React.ReactNode }) 
 
   return (
     <div
+      role="background image"
       className="min-h-screen w-full bg-cover bg-center"
       style={backgroundUrl ? { backgroundImage: `url(${backgroundUrl})` } : {}}
     >

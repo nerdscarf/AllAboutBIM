@@ -49,7 +49,9 @@ export default function BasicInfo() {
   if (!data) return <p>Loading...</p>;
 
   return (
-    <div className="relative w-full aspect-[2/3] rounded-2xl overflow-hidden border-4 border-black  hover:outline-4 hover:outline-black">
+    <div
+    role="basic information card" 
+    className="relative w-full aspect-[2/3] rounded-2xl overflow-hidden border-4 border-black  hover:outline-4 hover:outline-black">
       <Image
         src={portraitPhotos[0].urls.small}
         alt={portraitPhotos[0].alt_description ?? "Photo from Unsplash"}

@@ -13,7 +13,9 @@ export default function ApisUsed() {
   const landPhotographersURL = landscapePhotos?.[0]?.user?.links?.html ?? "#";
 
   return (
-    <div className="rounded-2xl bg-white shadow-xl text-[#374151] p-7 text-sm self-start border-4 border-black hover:outline-4 hover:outline-black">
+    <div 
+    role="api used card" 
+    className="rounded-2xl bg-white shadow-xl text-[#374151] p-7 text-sm self-start border-4 border-black hover:outline-4 hover:outline-black">
       <div className="flex flex-row flex-nowrap items-center">
         {emojis["e0-6-books"]?.character}
         <h1 className="text-sm font-bold uppercase pl-1">Resources Used</h1>
@@ -41,6 +43,11 @@ export default function ApisUsed() {
         <li className="hover:font-semibold">
           <a href="https://emoji-api.com" target="_blank">
             Emoji API
+          </a>
+        </li>
+        <li className="hover:font-semibold">
+          <a href="https://floating-ui.com" target="_blank">
+            Floating UI
           </a>
         </li>
         <li className="hover:font-semibold">

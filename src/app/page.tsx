@@ -7,6 +7,7 @@ import Holidays from "./components/publicholiday";
 // import BasicInfoCard from "./components/basicinfocard";
 // import RedditInfoCard from "./components/reddit";
 // import ExchangeRate from "./components/exchangerate";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
       <div className="break-inside-avoid py-4 px-3">
         <ApisUsed />
       </div> 
+      <SpeedInsights/>
     </div>
   </div>
 </div>
