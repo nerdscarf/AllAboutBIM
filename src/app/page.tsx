@@ -41,6 +41,7 @@ export default function Home() {
      {/*  <div className="break-inside-avoid py-4 px-3">
       <UnsplashLogger />
       </div>*/}
+      {/* <div className="break-inside-avoid py-4 px-3"> */}
       <div className="break-inside-avoid py-4 px-3">
         <ApisUsed />
       </div> 

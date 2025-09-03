@@ -45,7 +45,7 @@ export default function Holidays() {
   const holidays = data.upcomingHolidays as HolidayObject[];
 
   return (
-    <div className="rounded-2xl bg-white shadow-xl text-[#374151] p-7 self-start border-4 border-black hover:outline-4 hover:outline-black min-w-max">
+    <div className="rounded-2xl bg-white shadow-xl text-[#374151] p-7 self-start border-4 border-black hover:outline-4 hover:outline-black">
       <div className="flex flex-row flex-nowrap items-center">
         {emojis["calendar"]?.character}
         <h2 className="text-sm font-bold uppercase pl-1">Upcoming Holidays</h2>

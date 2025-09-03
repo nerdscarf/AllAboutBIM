@@ -49,14 +49,13 @@ export default function BasicInfo() {
   if (!data) return <p>Loading...</p>;
 
   return (
-    <div className="relative rounded-2xl overflow-hidden border-4 border-black  hover:outline-4 hover:outline-black">
+    <div className="relative w-full aspect-[2/3] rounded-2xl overflow-hidden border-4 border-black  hover:outline-4 hover:outline-black">
       <Image
         src={portraitPhotos[0].urls.small}
         alt={portraitPhotos[0].alt_description ?? "Photo from Unsplash"}
         className=""
-        width={400}
-        height={600}
-        priority={true}
+        fill
+        priority
       /> 
       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
       <div className="absolute bottom-6 left-6">
